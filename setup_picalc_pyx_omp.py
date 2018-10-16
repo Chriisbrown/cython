@@ -6,8 +6,8 @@ ext_modules = [
     Extension(
         "picalc_pyx_omp",
         ["picalc_pyx_omp.pyx"],
-        extra_compile_args=['/openmp'],
-        extra_link_args=['/openmp'],
+        extra_compile_args=['-fopenmp'],
+        extra_link_args=['-fopenmp'],
     )
 ]
 
